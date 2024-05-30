@@ -1,0 +1,39 @@
+.navSection {
+    position: fixed;
+    width: 100%;
+    background-color: white;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0 1px 7px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+}
+
+.navSection .navLogo {
+    display: flex;
+    gap: 15px;
+}
+
+.navSection .navLogo h1 {
+    font-size: 17px;
+    font-weight: 50;
+    color: #777;
+}
+
+.navSection .navLinks {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.navSection .navLinks a {
+    text-decoration: none;
+    color: #777;
+}
+
+@media screen and (max-width:992px) {
+    .navSection .navLinks {
+        display: none;
+    }
+}
